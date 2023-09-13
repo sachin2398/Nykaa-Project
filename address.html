@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Details</title>
+    <link rel="stylesheet" href="./Style/address.css">
 </head>
 <body>
     <div>
-        <h1>Add Address</h1>
         <form>
-            <h1>Address</h1>
-            <input type="number" id="pincode" placeholder="PinCode">
-            <input type="text" id="address1" placeholder="House/ Flat/ Office No.">
-            <textarea id="address2" placeholder="Road Name/ Area/ Colony"></textarea>
-            <h1>Contact</h1>
-            <p>Infornamtion provided here will be used to contact you for delivery updates.</p>
-            <input type="text" id="name" placeholder="Name">
-            <input type="number" id="phone" placeholder="Phone">
-            <input type="email" id="email" placeholder="Email">
-            <input type="submit" id="submit" placeholder="SHIP TO THIS ADDRESS">
-        </form>
-        
+            <h1>Add Your Details</h1>
+            <label for="">Name</label><br />
+            <input id="name" type="text" placeholder="Enter Name" /><br />
+            <label for="">Mobile Number</label><br />
+            <input id="mobile" type="number" placeholder="Enter Mobile Number" /><br />
+            <label for="">Email</label><br />
+            <input id="email" type="email" placeholder="Enter Email " /><br />
+            <label for="">Address-1</label><br />
+            <input id="address1" type="text" placeholder="Enter House no./ area" /><br />
+            <label for="">Address-2 </label><br />
+            <input id="address2" type="text" placeholder="Enter City" /><br />
+            <label for="">Mode Of Payment</label><br />
+            <select id="priority">
+              <option value="">Select Mode Of Payment</option>
+              <option value="High">Online Payment</option>
+              <option value="Low">Cash On Delivery</option>
+            ><br />
+            <input type="submit" />
+          </form>
     </div>
+    
 </body>
 </html>
-
 <script src="./Script/address.js"></script>

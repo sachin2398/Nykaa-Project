@@ -1,0 +1,53 @@
+div {
+    display: flex;
+    justify-content: space-around;
+  }
+  form {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type="text"],input[type="number"],input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="submit"],input[type="button"]  {
+    background-color: rgb(204, 62, 86);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(220, 12, 46);
+  }
+  input[type="button"]:hover {
+    background-color: rgb(220, 12, 46);
+  }
+
+  label {
+    font-size: 20px;
+  }
+  h1{
+    text-align: center;
+  }

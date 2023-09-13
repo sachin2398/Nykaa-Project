@@ -6,16 +6,27 @@ form.addEventListener("submit",function formSub(event){
     event.preventDefault()
 
     var formObj={
-        pincode: event.target.pincode.value,
-        address1: event.target.pincode.value,
-        address2: event.target.pincode.value,
         name: event.target.name.value,
-        phone: event.target.phone.value,
-        email: event.target.email.value
+        mobile: event.target.mobile.value,
+        email: event.target.email.value,
+        address1: event.target.address1.value,
+        address2: event.target.address2.value,
+        
     }
 
     details.push(formObj)
     localStorage.setItem("add-details",JSON.stringify(details))
 
     form.reset()
+    
+    var selectElement = document.getElementById("priority")
+
+    selectElement.addEventListener('change', function() {
+        if (selectElement.value === 'High') {
+          window.location.href = 'payment.html';
+        }else{
+            alert("Order Placed")
+        }
+      })
+
 })

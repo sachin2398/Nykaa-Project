@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
+    <link rel="stylesheet" href="./Style/payment.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Payment Details</h1>
+    <div>
         <form>
-            <h1>Payment Mode:</h1>
-            <select id="paymentMode" name="paymentMode">
-                <option value="creditCard">Credit Card</option>
-                <option value="payPal">PayPal</option>
-                <option value="onDelivery">Cash On Delivery</option>
-            </select>
-
-            <div id="creditCardDetails">
-                <input type="text" id="cardNumber" placeholder="Credit Card Number">
-                <input type="text" id="expiryDate" placeholder="Expiry Date">
-                <input type="text" id="cvv" placeholder="CVV">
-            </div>
-
-            <div id="payPalDetails">
-                <input type="email" id="paypalEmail" placeholder="Email">
-            </div>
-
-
-        </form>
+            <h1>Add card Details</h1>
+            <label for="">Name</label><br />
+            <input id="name" type="text" placeholder="Enter Name" /><br />
+            <label for="">Card Number</label><br />
+            <input id="Card" type="number" placeholder="Enter Card Number" /><br />
+            <label for="">CVV</label><br />
+            <input id="CVV" type="text" placeholder="Enter CVV " /><br />
+            <label for="">Expire Date </label><br />
+            <input id="date" type="date" placeholder="Enter date " /><br />
+            <label for="">Card type </label><br />
+            <select id="priority">
+              <option value="">Select Priority</option>
+              <option value="High">Master Card</option>
+              <option value="Low">Visa</option>
+              <option value="Low">Rupay</option>
+            ><br />
+            <input type="submit" />
+          </form>
     </div>
+    
 </body>
 </html>
-
 <script src="./Script/payment.js"></script>
