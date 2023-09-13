@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Reset</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/signUp/signUp.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form >
+            <h1>Reset your password</h1>
+            <div class="Input-box">
+                <input id="name" type="text" placeholder="Username"><i class='bx bx-user'></i>
+            </div>
+            <div class="Input-box">
+                <input id="email" type="email" placeholder="Email"><i class='bx bx-user'></i>
+            </div>
+            <!-- <div class="Input-box">
+                <input id="password" type="password" placeholder="OTP"><i class='bx bxs-chat'></i>
+            </div> -->
+            
+            <button type="submit" class="btn" onclick="redirectToOtpPage()">Get OTP</button>
+            <div class="register-link">
+                <p>Back to <a href="/signUp/index.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+ function redirectToOtpPage() {
+        var email = document.querySelector("#email").value;
+
+        // Get the existing data from local storage
+        var arr = JSON.parse(localStorage.getItem("account-data")) || [];
+
+        // Check if the email already exists in the stored data
+        var emailIndex = arr.findIndex(function (item) {
+        return item.email === email;
+         });
+
+        if (emailIndex !== -1) {
+            alert("Your temp password is  is 123.");
+            // Redirect to the OTP page
+            arr[emailIndex].password = "123";
+            localStorage.setItem("account-data", JSON.stringify(arr));
+        } else {
+            alert("User is not registered.");
+        }
+    }
+</script>
+</script>

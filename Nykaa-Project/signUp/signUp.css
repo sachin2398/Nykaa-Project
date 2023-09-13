@@ -1,0 +1,113 @@
+/* @import url("https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700;800;9008 display-swap"); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background: rgb(243,243,243);
+    background-size: cover;
+}
+
+.wrapper{
+    width: 420px;
+    background: #fff;
+    border: 2px solid rgb(214, 214, 214);
+    /* backdrop-filter: blur(20px); */
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.wrapper .Input-box{
+    position: relative;
+    width:100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.Input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid  rgb(251,39,120);
+    border-radius: 40px;
+    font-size: 15px;
+    color: rgb(243,243,243);
+    padding: 20px 45px 20px 20px;
+}
+
+.Input-box input::placeholder{
+    color: rgb(251,39,120);
+}
+.Input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.forgot{
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-content: end; */
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.forgot a{
+    color: #a1a1a1;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+ .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background:rgb(251,39,120);  
+    border: none;
+    outline: none;
+    border-radius: 40px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.wrapper .register-link{
+
+    font: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color:rgb(251,39,120);
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+.register-link p{
+    color: rgb(165, 165, 165);
+}
