@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #carouselExampleInterval{
+            margin: 10px;
+            
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px gray;
+            
+        }
+
+        #carouselExampleInterval>div>div>img{
+            
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px gray;
+            
+        }
+
+        #previous-carousel-2:hover{
+            background-color: rgba(202, 201, 201, 0.877);
+        }
+
+        #next-carousel-2:hover{
+            background-color: rgba(202, 201, 201, 0.877);
+        }
+
+        #carousel-1{
+            margin-top: 30px;
+        }
+
+        #mid-img{
+            display: flex;
+            display: inline-block;
+            text-align: left;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 50px;
+            
+        }
+
+        #mid-img>img{
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px gray;
+        }
+
+        #mid-img>img:hover{
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px rgb(92, 92, 92);
+        }
+
+        #cetagory-main{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        #cetagory-main>img:hover{
+            cursor: pointer;
+        }
+
+        h1{
+            margin: 30px;
+            text-shadow: 0px 10px 10px gray;
+        }
+
+        #footer-1{
+          background-color: #181f33;
+          height: 125px;
+          color: white;
+          
+        }
+
+        #footer-1>div{
+          /* border: 1px solid red; */
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        #footer-1>div>div{
+          /* border: 1px solid red; */
+          display: flex;
+          display: inline-block;
+          justify-content: center;
+          align-items: center;        
+          width: 300px;
+          height: 125px;
+        }
+
+        #footer-1>div>div>h3{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: medium;
+          
+        }
+
+        #googleplayimg{
+
+          width: 280px;
+        }
+
+        #footer-2{
+          background-color: #8c8d94;
+          height: 450px;
+          color: white;
+          
+          
+        }
+
+        #footer-2>div{
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 450px;
+          /* border: 1px solid red; */
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          
+        }
+
+        #footer-2>div>div{
+          
+          display: flex;
+          
+          display: inline-block;
+          justify-content: space-evenly;
+          align-items: center;
+          /* border: 1px solid red;     */
+          width: 225px;
+          height: 300px;
+        }
+
+        #footer-2>div>div>h3,p{
+          color: white;
+          text-align: center;
+          
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div id="carousel-1">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/photo-7.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/6dd86f98-19ac-4e60-8aae-61849054d13a.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/8bd6e0df-7f5c-4585-95d9-1e0311dc994a.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/3f7bc6fc-0747-44d4-acca-993ab1196d3c.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="mid-img">
+            <h1>#InternationalBeautyDaySale</h1><br>
+            <img src="/Nykaa-Project/images/mid-img-1.webp" alt="">
+          </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-6.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-5.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-4.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button id="previous-carousel-2" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="next-carousel-2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div >
+    <h1 id="cetagory-word">Cetagory</h1>
+    <div id="cetagory-main">
+        <img src="/Nykaa-Project/images/Women-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Men-1.avif" alt="">
+        <img src="/Nykaa-Project/images/kids-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Home-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Tech-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Luxe-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Global -store-1.avif -store-1.avif" alt="">
+        <img src="/Nykaa-Project/images/revolve-1.avif" alt="">
+
+    </div>
+
+    <div id="footer-1">
+      <div>
+        <div>
+          <h3>Get special discount on your inbox</h3>
+          <input style="background-color: transparent; outline: none; border: 0px; border-bottom: 1px solid white;" type="email" placeholder="Your Email">
+          <button style="background-color: transparent; color: white; border: 1px solid white; border-radius: 5px;">Submit</button>
+        </div> 
+        <div>
+          <h3>EXPERIENCE THE NYKAA MOBILE APP</h3>
+          <img id="googleplayimg" src="/Nykaa-Project/images/googleplay-2.png" alt="">
+        </div>
+        <div style="padding: 10px; font-size: small;">
+          <p>FOR ANY HELP CALL US AT</p>
+          <p>1800-267-4444</p>
+          <p>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-2">
+      <div>
+        <div>
+          <h3>Beautify</h3>
+          <p>Who we are?</p>
+          <p>Authenticity</p>
+          <p>Press</p>
+          <p>Testimonials</p>
+          <p>Nykaa CSR</p>
+          <p>Responsible Discloser</p>
+        </div> 
+        <div>
+          <h3>Help</h3>
+          <p>Contact Us</p>
+          <p>FAQ`s</p>
+          <p>Store Location</p>
+          <p>Cancellation</p>
+          <p>Shipment</p>
+          <p>Sell on Nykaa</p>
+        </div> 
+        <div>
+          <h3>Inspire Me</h3>
+          <p>Beauty Book</p>
+          <p>Nykaa TV</p>
+          <p>Nykaa Network</p>
+          <p>Buying Guids</p>
+          <p>Nykaa Fashion</p>
+          <p>Models</p>
+        </div> 
+        <div>
+          <h3>Quick Links</h3>
+          <p>Offer Zone</p>
+          <p>New Launched</p>
+          <p>Nykaa Men</p>
+          <p>Nykaa Fashion</p>
+          <p>Nykaa Pro</p>
+          <p>SiteMap</p>
+        </div> 
+        <div>
+          <h3>Top Categories</h3>
+          <p>Make up</p>
+          <p>Personal Care</p>
+          <p>Hair</p>
+          <p>Skin</p>
+          <p>Application</p>
+          <p>Nature</p>
+        </div> 
+      </div>
+</body>
+</html>
