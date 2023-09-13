@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Payment System</h1>
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form>
+            <h1>Payment Mode:</h1>
+            <select id="paymentMode" name="paymentMode">
+                <option value="creditCard">Credit Card</option>
+                <option value="payPal">PayPal</option>
+                <option value="onDelivery">Cash On Delivery</option>
+            </select>
+
+            <div id="creditCardDetails">
+                <input type="text" id="cardNumber" placeholder="Credit Card Number">
+                <input type="text" id="expiryDate" placeholder="Expiry Date">
+                <input type="text" id="cvv" placeholder="CVV">
+            </div>
+
+            <div id="payPalDetails">
+                <input type="email" id="paypalEmail" placeholder="Email">
+            </div>
+
+
+        </form>
+    </div>
 </body>
 </html>
+
+<script src="./Script/payment.js"></script>
