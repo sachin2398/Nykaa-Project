@@ -1,10 +1,9 @@
-import { footer } from "./footer/utilityFooter.js";
-import { navbar } from "./utilityNavbar.js";
+let productData = [
+    {
+        Id : 1,
+        name : "",
+        image : "",
+        discription : ""
 
-document.getElementById("navbar").innerHTML = navbar()
-
-
-
-
-
-document.getElementById("footer").innerHTML = footer()
+    },
+];
