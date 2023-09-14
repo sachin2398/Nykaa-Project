@@ -11,22 +11,26 @@ form.addEventListener("submit",function formSub(event){
         email: event.target.email.value,
         address1: event.target.address1.value,
         address2: event.target.address2.value,
-        
+        payment:event.target.priority.value
     }
 
-    details.push(formObj)
-    localStorage.setItem("add-details",JSON.stringify(details))
+    // Form filled or not
+    if (formObj.name === '' || formObj.mobile === '' || formObj.email === '' || formObj.address1 === '' || formObj.address2 === '' || formObj.payment === '') {
+      alert('Please fill in all required fields.');
+    }else{
+      // if form filled storing data to local storage
 
-    form.reset()
+      details.push(formObj)
+      localStorage.setItem("add-details",JSON.stringify(details))
+
+      form.reset() 
     
-    var selectElement = document.getElementById("priority")
-
-    selectElement.addEventListener('change', function() {
-        if (selectElement.value === 'High') {
-          window.location.href = 'payment.html';
-        }else{
-            alert("Order Placed")
-        }
-      })
-
+      // Mode of Payment
+      if(formObj.payment === 'High'){
+        window.location.href = 'payment.html'
+      }else{
+        alert("Your Order Has Been Placed")
+      }
+    }
+    
 })
