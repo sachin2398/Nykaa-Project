@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wholepage{
+    display: flex;
+    width: 100%;
+}
+
+body{
+    color: rgb(63, 65, 77);
+    background-color:black;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+.cart-content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -300px; /*Adjust this value to control the initial position of the cart*/
+    transition: 0.5s;
+    z-index: 1;
+    color: white;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Add these styles to adjust the cart's position when it's opened */
+.cart-content.opened {
+    right: 0;
+}
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+-webkit-tap-highlight-color: transparent;
+}
+
+html, body, button, input, select, textarea, span, p, h1, h2, h3, h4, i {
+    font-family: Inter, sans-serif;
+}  
+.cart-elements{
+    display: flex;
+    flex-direction: column;
+}
+.tap{
+    width: 30%;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    color:black;
+    border: none;
+    /* cursor: pointer; */
+    overflow: hidden;
+}
+button.tap {
+    width: 20%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.tap.hide-text {
+    opacity: 0; /* Hide the text when the .hide-text class is applied */
+}
+/* #main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+} */
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    /* background-color: pink; */
+    position: fixed;
+    box-shadow: rgba(0, 19, 37, 0.16) 0px -1px 0px inset;
+}
+#part1{
+    display: flex;
+    width: 70%;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+#back-button{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    fill: none;
+    cursor: pointer;
+    margin: 0px 10px 0px 8px;
+}
+.rightside{
+    
+    width: 10%;
+    margin: 0px 0px 0px 20px;
+}
+.wishlist{
+    
+    width: 20%;
+    margin-left: 30px;
+}
+#btn{
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(232, 0, 113);
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+#pointbox{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin :60px 20px 10px ;/* Add margins for spacing */
+    padding: 20px; /* Add padding for content spacing */
+    border: 1px solid #ddd; 
+    border-radius: 9px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+    border: 1px solid green;
+    margin-right:  10px;
+}
+.ticked {
+    background-color: green;
+}
+.applybtn{
+    border: none;
+    color: rgb(232, 0, 113);
+    margin-left: 20px ;
+    background :#ffff;
+    font-weight: 700;
+}
+#productDiv {
+    display: flex;
+    width: 90%;
+    height: 25%;
+    margin: 5px 20px 10px 20px;
+    background-color: pink;
+    position: relative;
+    border: 1px solid rgba(156, 157, 158, 0.8);
+    border-radius: 9px;
+    padding: 20px;
+
+}
+#coupon{
+    display: flex;
+    width: 90%;
+    height: 10%;
+    margin :10px 20px 10px ;/* Add margins for spacing */
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 9px;
+}
+#coupon + div{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+     margin-right: 10px;
+    
+}
+
+.crewdiv{
+    display: flex;
+    height:8px;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding-left: 16px;
+    margin: 0;
+}
+.p{
+    margin-left: 2px;
+    text-align: center;
+    color: rgba(0, 19, 37, 0.92);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.insidecoupon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-left:16px;
+    /* background-color: pink; */
+    width: 100%;
+    height: auto;
+    color: rgb(232, 0, 113);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 0px;
+}
+#spantag{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
