@@ -1,2 +1,0 @@
-# Nykaa-Project
-Nykaa-Project
