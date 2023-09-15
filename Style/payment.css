@@ -37,6 +37,11 @@ div {
     cursor: pointer;
   }
 
+  .tick-icon3 img{
+    max-width: 35px;
+    max-height: 35px;
+  }
+
   input[type="text"],input[type="number"],input[type="date"],
   select,
   textarea {

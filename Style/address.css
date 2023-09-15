@@ -34,6 +34,16 @@ div {
     cursor: pointer;
   }
 
+  .tick-icon2 img{
+    max-width: 35px;
+    max-height: 35px;
+  }
+
+  .tick-icon3 img{
+    max-width: 35px;
+    max-height: 35px;
+  }
+
   input[type="text"],input[type="number"],input[type="email"],
   select,
   textarea {

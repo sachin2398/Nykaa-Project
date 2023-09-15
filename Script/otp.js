@@ -1,5 +1,6 @@
 var obj =1222
 //localStorage.setItem("carddetails", JSON.stringify(obj));
+alert("Your OTP is 1222");
 
 var  otp = document.querySelector("#OTP");
 document.querySelector("form").addEventListener("submit", form);
@@ -30,8 +31,8 @@ document.querySelector("#page").addEventListener("click" , function () {
     
     }
 
-function changeOTP(newOTP) {
-    var otpElement = document.getElementById("otpGen");
-    otpElement.textContent = "Do not share OTP with others. Current OTP is " + newOTP;
-}
-changeOTP(obj);
+//function changeOTP(newOTP) {
+//    var otpElement = document.getElementById("otpGen");
+//    otpElement.textContent = "Do not share OTP with others. Current OTP is " + newOTP;
+//}
+//changeOTP(obj);
