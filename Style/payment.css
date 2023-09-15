@@ -13,6 +13,27 @@ div {
     box-sizing: border-box;
   }
   
+  #navBar>p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+  .tick-icon{
+    margin-right: 50px;
+  }
+  #navBar{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+  }
+  .tick-icon1{
+    color: rgb(236, 63, 92);
+  }
+  .tick-icon2{
+    color: rgb(236, 63, 92);
+  }
+
   input[type="text"],input[type="number"],input[type="date"],
   select,
   textarea {

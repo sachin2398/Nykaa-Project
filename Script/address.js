@@ -1,3 +1,8 @@
+var signBtn=document.querySelector(".tick-icon1").addEventListener("click",function(){
+  window.location="signin.html"
+})
+
+
 
 var details = JSON.parse(localStorage.getItem("add-details")) || []
 
@@ -29,7 +34,7 @@ form.addEventListener("submit",function formSub(event){
       if(formObj.payment === 'High'){
         window.location.href = 'payment.html'
       }else{
-        alert("Your Order Has Been Placed")
+        window.location.href = 'orderPlaced.html'
       }
     }
     
