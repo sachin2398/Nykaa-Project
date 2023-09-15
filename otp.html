@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP</title>
     <link rel="stylesheet" href="./Style/payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div>
         <form>
-            <h1>Do not share OTP with others</h1>
+            <h1 id="otpGen"></h1>
             <label for="">Enter OTP</label><br />
             <input id="OTP" type="number" placeholder="OTP" /><br />
             <input type="submit" /><br>
             <input type="button" value="Back to shopping" id="page"/>
           </form>
     </div>
-    
+    <div id="tostBox">
+        
+    </div>
 </body>
 </html>
 <script src="./Script/otp.js"></script>

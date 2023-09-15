@@ -20,8 +20,10 @@ form.addEventListener("submit",function formSub(event){
     }
 
     // Form filled or not
+    var p = document.querySelector("#alertMsg")
     if (formObj.name === '' || formObj.mobile === '' || formObj.email === '' || formObj.address1 === '' || formObj.address2 === '' || formObj.payment === '') {
-      alert('Please fill in all required fields.');
+      var ale="Please fill in all required fields."
+      showtost(ale)
     }else{
       // if form filled storing data to local storage
 
@@ -39,3 +41,16 @@ form.addEventListener("submit",function formSub(event){
     }
     
 })
+
+
+var tostBox = document.getElementById("tostBox");
+function showtost(cre){
+  var tost = document.createElement("div");
+  tost.classList.add("tost");
+  tost.innerHTML = "<i class='bx bxs-x-circle'></i>" +cre;
+  tostBox.appendChild(tost);
+  setTimeout(()=>{
+    tost.remove();
+  },1500);
+
+}

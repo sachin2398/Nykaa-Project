@@ -29,9 +29,11 @@ div {
   }
   .tick-icon1{
     color: rgb(236, 63, 92);
+    cursor: pointer;
   }
   .tick-icon2{
     color: rgb(236, 63, 92);
+    cursor: pointer;
   }
 
   input[type="text"],input[type="number"],input[type="date"],
@@ -72,3 +74,48 @@ div {
   h1{
     text-align: center;
   }
+
+  #tostBox{
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.tost{
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.tost i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: red;
+    padding-right: 10px;
+    border-right: 1px solid rgb(205, 203, 203);
+}
+.tost::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    animation: anim 1.5s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
