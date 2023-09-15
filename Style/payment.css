@@ -26,6 +26,7 @@ div {
     display: flex;
     justify-content: space-around;
     height: 40px;
+    margin-right: 350px;
   }
   .tick-icon1{
     color: rgb(236, 63, 92);

@@ -16,7 +16,7 @@ div {
   #navBar>p{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 24px;
   }
   .tick-icon{
@@ -24,9 +24,9 @@ div {
   }
   #navBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 40px;
-    margin-right: 35 0px;
+    margin-right: 350px;
   }
 
   .tick-icon1{
