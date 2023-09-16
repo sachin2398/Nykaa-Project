@@ -20,7 +20,6 @@ form.addEventListener("submit",function formSub(event){
     }
 
     // Form filled or not
-    var p = document.querySelector("#alertMsg")
     if (formObj.name === '' || formObj.mobile === '' || formObj.email === '' || formObj.address1 === '' || formObj.address2 === '' || formObj.payment === '') {
       var ale="Please fill in all required fields."
       showtost(ale)

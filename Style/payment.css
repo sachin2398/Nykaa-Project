@@ -1,127 +1,255 @@
-div {
-    display: flex;
-    justify-content: space-around;
-  }
-  form {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 30%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 30px;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  
-  #navBar>p{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+  color: #444;
 }
-  .tick-icon{
-    margin-right: 50px;
-  }
-  #navBar{
-    display: flex;
-    justify-content: space-around;
-    height: 40px;
-    margin-right: 350px;
-  }
-  .tick-icon1{
-    color: rgb(236, 63, 92);
-    cursor: pointer;
-  }
-  .tick-icon2{
-    color: rgb(236, 63, 92);
-    cursor: pointer;
-  }
 
-  .tick-icon3 img{
-    max-width: 35px;
-    max-height: 35px;
-  }
+body{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
-  input[type="text"],input[type="number"],input[type="date"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type="submit"],input[type="button"]  {
-    background-color: rgb(204, 62, 86);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 20px;
-    margin: 10px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: rgb(220, 12, 46);
-  }
-  input[type="button"]:hover {
-    background-color: rgb(220, 12, 46);
-  }
+#navBar>p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.tick-icon{
+  margin-right: 50px;
+}
+#navBar{
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  margin-right: 350px;
+  width: 100%;
+  margin-top: 5px;
+}
+.tick-icon1{
+  color: rgb(236, 63, 92);
+  cursor: pointer;
+}
+.tick-icon2{
+  color: rgb(236, 63, 92);
+  cursor: pointer;
+}
 
-  label {
-    font-size: 20px;
-  }
-  h1{
-    text-align: center;
-  }
+.tick-icon3 img{
+  max-width: 35px;
+  max-height: 35px;
+}
 
-  #tostBox{
-    position: absolute;
-    top: 15px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
-    overflow: hidden;
-    padding: 20px;
+.container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.left{
+  width: 25%;
+  font-weight: bold;
+}
+
+.left p{
+  padding: 30px 20px;
+}
+
+.methods{
+  padding: 10px 0;
+}
+
+.methods div{
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.methods div:hover{
+  box-shadow: 0 0 10px rgba(172, 255, 47, 0.196);
+}
+
+.methods div::after{
+  content: '';
+  display: inline-block;
+  color: rgb(211, 63, 88);
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-left-color: var(--fondy-success);
+  margin-left: 10px;
+}
+
+.fa-solid{
+  margin-right: 10px;
+  font-size: 22px;
+  color: #aaa;
+}
+
+.center{
+  width: 50%;
+  border-radius: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  height: 70vh;
+}
+
+.center a{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  width: 25%;
+  border-left: 1px solid #ccc;
+}
+
+.right p{
+  padding: 30px 20px;
+  font-weight: bold;
+}
+
+.details{
+  padding: 20px 20px;
+}
+
+.right a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.card-details{
+  padding: 20px 80px;
+}
+
+.card-details .c-number{
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0 12px;
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input{
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.c-details{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cc-exp{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height:  50px;
+  margin-top: 10px;
+  padding: 12px;
+  width:  150px;
+}
+
+.c-details .cvv-box{
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  padding: 12px;
+  height: 50px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  width:  108px;
+}
+
+.cc-cvv{
+  width: 60px;
+}
+
+.email input{
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 12px;
+  height: 50px;
+  margin-top: 10ox;
+}
+
+input[type="submit"]{
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  height: 50px;
+  font-size: 18px;
+  color: #444;
+  background-color: rgb(211, 63, 88);
+}
+
+input[type="submit"]:hover{
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+#tostBox{
+  position: absolute;
+  top: 15px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
 }
 .tost{
-    width: 400px;
-    height: 80px;
-    background: #fff;
-    font-weight: 500;
-    margin: 15px 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  width: 400px;
+  height: 80px;
+  background: #fff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .tost i{
-    margin: 0 20px;
-    font-size: 35px;
-    color: red;
-    padding-right: 10px;
-    border-right: 1px solid rgb(205, 203, 203);
+  margin: 0 20px;
+  font-size: 35px;
+  color: red;
+  padding-right: 10px;
+  border-right: 1px solid rgb(205, 203, 203);
 }
 .tost::after{
-    content:"";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background-color: red;
-    animation: anim 1.5s linear forwards;
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  animation: anim 1.5s linear forwards;
 }
 @keyframes anim {
-    100%{
-        width: 0;
-    }
+  100%{
+      width: 0;
+  }
 }

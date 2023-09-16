@@ -3,41 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Document</title>
+    <script src="https://kit.frontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Style/payment.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div id="navBar">
-    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/nykaa-logo.svg" alt="Nyka" id="nyka">
-    <p class="tick-icon1"><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt="tick-icon" class="tick-icon" >Sign Up</p>
-    <p class="tick-icon2"><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt="tick-icon" class="tick-icon" >Address</p>
-    <p class="tick-icon3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circle_Davys-Grey_Solid.svg/1200px-Circle_Davys-Grey_Solid.svg.png" alt="tick-icon" class="tick-icon" >Payment</p>
-</div>
-    <div>
-        <form>
-            <h1>Add card Details</h1>
-            <label for="">Name</label><br />
-            <input id="name" type="text" placeholder="Enter Name" /><br />
-            <label for="">Card Number</label><br />
-            <input id="Card" type="number" placeholder="Enter Card Number" /><br />
-            <label for="">CVV</label><br />
-            <input id="CVV" type="text" placeholder="Enter CVV " /><br />
-            <label for="">Expire Date </label><br />
-            <input id="date" type="date" placeholder="Enter date " /><br />
-            <label for="">Card type </label><br />
-            <select id="priority">
-              <option value="">Select Card</option>
-              <option value="High">Master Card</option>
-              <option value="Low">Visa</option>
-              <option value="Low">Rupay</option>
-            ><br />
-            <input type="submit" />
-          </form>
+    <div id="navBar">
+        <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/nykaa-logo.svg" alt="Nyka" id="nyka">
+        <p class="tick-icon1"><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt="tick-icon" class="tick-icon" >Sign Up</p>
+        <p class="tick-icon2"><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt="tick-icon" class="tick-icon" >Address</p>
+        <p class="tick-icon3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circle_Davys-Grey_Solid.svg/1200px-Circle_Davys-Grey_Solid.svg.png" alt="tick-icon" class="tick-icon" >Payment</p>
     </div>
-    <div id="tostBox">
+
+    <div class="container">
+        <div class="left">
+            <p>Payment methods</p>
+            <hr style="border: 1px solid #ccc; margin:  0 15px;">
+            <div class="methods">
+                <div onclick="doFun()" id="tColorA" style="color:rgb(211, 63, 88)">
+                    <i class="fa-solid fa-credit-card" style="color:rgb(211, 63, 88);"></i>Payment by card
+                </div>
+                <div onclick="doFunA()" id="tColorB">
+                    <i class="fa-solid fa-building-columns"></i>Internet banks
+                </div>
+                <div onclick="doFunB()" id="tColorC">
+                    <i class="fa-solid fa-wallet"></i>Apple/Google pay
+                </div>
+            </div>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+        </div>
+        <div class="center">
+            <a href="https://www.shift4shop.com/credit-card-logos.html">
+                <img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250" height="auto"/>
+            </a>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <div class="card-details">
+                <form>
+                    <p>Card Number</p>
+                    <div class="c-number" id="c-number">
+                        <input id="number" class="cc-number" type="number" placeholder="Card number" maxlength="19" required>
+                        <i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+                    </div>
+                    <div class="c-details">
+                        <div>
+                            <p>Expiry date</p>
+                            <input id="e-date" class="cc-exp" type="date" placeholder="MM/YY" required maxlength="5" required>
+                        </div>
+                        <div>
+                            <p>CVV</p>
+                            <div class="cvv-box" id="cvv-box">
+                                <input id="cvv" class="cc-cvv" type="number" placeholder="CVV" required maxlength="3" required>
+                                <i class="fa-solid fa-circle-question" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" placeholder="example@gmail.com" id="email" required>
+                    </div>
+                    <input type="submit" />
+                </form>
+                <div id="tostBox">
         
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <p>Order infomation</p>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <div class="details">
+                <div style="font-weight: bold; padding: 3px 0;">
+                    Order discription
+                </div>
+                <div style="padding: 3px 0;">
+                    Test payment
+                </div>
+            </div>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <a href="https://www.shift4shop.com/credit-card-logos.html">
+                <img alt="Credit Card Logos" tittle="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" />
+            </a>
+        </div>
     </div>
+    
 </body>
 </html>
+
 <script src="./Script/payment.js"></script>

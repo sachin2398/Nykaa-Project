@@ -18,7 +18,7 @@ div {
     align-items: center;
     justify-content: space-between;
     font-size: 24px;
-  }
+}
   .tick-icon{
     margin-right: 50px;
   }
@@ -27,13 +27,13 @@ div {
     justify-content: space-around;
     height: 40px;
     margin-right: 350px;
+    width: 100%;
+    margin-top: 5px;
   }
-
   .tick-icon1{
     color: rgb(236, 63, 92);
     cursor: pointer;
   }
-
   .tick-icon2 img{
     max-width: 35px;
     max-height: 35px;
