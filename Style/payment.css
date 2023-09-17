@@ -30,11 +30,11 @@ body{
   margin-top: 5px;
 }
 .tick-icon1{
-  color: rgb(236, 63, 92);
+  color: #fc2779;
   cursor: pointer;
 }
 .tick-icon2{
-  color: rgb(236, 63, 92);
+  color: #fc2779;
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ body{
 .methods div::after{
   content: '';
   display: inline-block;
-  color: rgb(211, 63, 88);
+  color: #fc2779;
   width: 0;
   height: 0;
   border-color: transparent;
@@ -200,7 +200,7 @@ input[type="submit"]{
   height: 50px;
   font-size: 18px;
   color: #444;
-  background-color: rgb(211, 63, 88);
+  background-color: #fc2779;
 }
 
 input[type="submit"]:hover{
