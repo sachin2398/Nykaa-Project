@@ -139,7 +139,7 @@
 }
 
 body{
-  background-image: url("Image/Background.png");
+  background-image: url("/Nykaa-Project/Image/Background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
