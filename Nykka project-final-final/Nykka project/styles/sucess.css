@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+button {
+    background-color: #fc2779;
+    border:1px solid #fc2779;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+}

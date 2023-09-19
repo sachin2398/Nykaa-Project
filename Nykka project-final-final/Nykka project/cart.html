@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="navbar-middle">
+      <div id="navbar-middle">
+        <a href="index.html">
+          <div id="logo">
+            <img
+              id="logo-img"
+              src="https://seeklogo.com/images/N/nykaa-logo-AA06314FB9-seeklogo.com.png"
+            /></div
+        ></a>
+        <div class="nav-middle-list">
+          <ul class="nav-middle-list">
+            <li>CATEGORIES</li>
+            <li>BRANDS</li>
+            <li>NYKAA FASHION</li>
+            <li>BEAUTY ADVICE</li>
+            <li>NYKAA NETWORK</li>
+          </ul>
+          <input
+            type="search"
+            id="search"
+            name="q"
+            placeholder="Search on Nykaa"
+          />
+        </div>
+        <div class="nav-middle-side">
+          <p>Account</p>
+        </div>
+        <a href="cart.html">
+          <div id="cart-img">
+            <span class="cart--icon"
+              ><i style="font-size: 20px" class="fa">&#xf290;</i>
+            <p id="cart_quantity">0</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="new"></div>
+    <div id="main-div">
+      <div id="cartcontainer"></div>
+      <div id="side-box">
+        <div id="coupon">
+          <input type="text" id="cupon-filled" placeholder="Apply coupon code" />
+          <button id="cupon-active">Submit</button>
+        </div>
+        <div id="pay">
+          <h3>Payment Details</h3>
+        </div>
+        
+        <div id="details">
+          <p id="btot"></p>
+          <p id="bdis"></p>
+          <p id="stot"></p>
+          <p id="schar">
+            Shipping Charge:
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFree
+          </p>
+          <hr />
+          <p id="total"></p>
+          <!-- <a href="/Nykaa-Project-payment/payment.html" -->
+            <a href="/Nykaa-Project-payment/address.html"
+            ><button id="btn">PROCEED TO PAYMENT ></button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="tostBox"></div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./scripts/cart.js"></script>
+<script src="./scripts/cart.js" type="module"></script>
