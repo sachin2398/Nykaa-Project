@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #carouselExampleInterval{
+            margin: 10px;
+            
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px gray;
+            
+        }
+
+        #carouselExampleInterval>div>div>img{
+            
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px gray;
+            
+        }
+
+        #previous-carousel-2:hover{
+            background-color: rgba(202, 201, 201, 0.877);
+        }
+
+        #next-carousel-2:hover{
+            background-color: rgba(202, 201, 201, 0.877);
+        }
+
+        #carousel-1{
+            margin-top: 30px;
+        }
+
+        #mid-img{
+            display: flex;
+            display: inline-block;
+            text-align: left;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 50px;
+            
+        }
+
+        #mid-img>img{
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px gray;
+        }
+
+        #mid-img>img:hover{
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px rgb(92, 92, 92);
+        }
+
+        #cetagory-main{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        #cetagory-main>img:hover{
+            cursor: pointer;
+        }
+
+        h1{
+            margin: 30px;
+            text-shadow: 0px 10px 10px gray;
+        }
+
+        #footer-1{
+          background-color: #181f33;
+          height: 125px;
+          color: white;
+          
+        }
+
+        #footer-1>div{
+          /* border: 1px solid red; */
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        #footer-1>div>div{
+          /* border: 1px solid red; */
+          display: flex;
+          display: inline-block;
+          justify-content: center;
+          align-items: center;        
+          width: 300px;
+          height: 125px;
+        }
+
+        #footer-1>div>div>h3{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: medium;
+          
+        }
+
+        #googleplayimg{
+
+          width: 280px;
+        }
+
+        #footer-2{
+          background-color: #8c8d94;
+          height: 450px;
+          color: white;
+          
+          
+        }
+
+        #footer-2>div{
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 450px;
+          /* border: 1px solid red; */
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          
+        }
+
+        #fist{
+          border: 0px;
+        }
+
+        #footer-2>div>div{
+          
+          display: flex;
+          
+          display: inline-block;
+          justify-content: space-evenly;
+          align-items: center;
+          /* border: 1px solid red;     */
+          width: 225px;
+          height: 300px;
+        }
+
+        #footer-2>div>div>h3,p{
+          
+          /* color: white; */
+          text-align: center;
+          
+          
+        }
+
+        #footer-3{
+          background-color: #f3f4f5;
+          height: 250px;
+          
+          
+          
+        }
+
+        #footer-3>div{
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 250px;
+          border: 1px solid red;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          
+        }
+
+        #footer-3>div>div{
+          
+          display: flex;
+          
+          display: inline-block;
+          justify-content: space-evenly;
+          align-items: center;
+          /* border: 1px solid red;     */
+          width: 225px;
+          height: 150px;
+        }
+
+        #footer-3>div>div>h3,p{
+         
+          text-align: center;
+          
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <p></p>
+          </div>
+        </div>
+      </nav>
+
+    <div id="carousel-1">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/photo-7.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/6dd86f98-19ac-4e60-8aae-61849054d13a.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/8bd6e0df-7f5c-4585-95d9-1e0311dc994a.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Nykaa-Project/images/3f7bc6fc-0747-44d4-acca-993ab1196d3c.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="mid-img">
+            <h1>#InternationalBeautyDaySale</h1><br>
+            <img src="/Nykaa-Project/images/mid-img-1.webp" alt="">
+          </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-6.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-5.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="/Nykaa-Project/images/photo-4.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button id="previous-carousel-2" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="next-carousel-2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div >
+    <h1 id="cetagory-word">Cetagory</h1>
+    <div id="cetagory-main">
+        <img src="/Nykaa-Project/images/Women-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Men-1.avif" alt="">
+        <img src="/Nykaa-Project/images/kids-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Home-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Tech-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Luxe-1.avif" alt="">
+        <img src="/Nykaa-Project/images/Global -store-1.avif -store-1.avif" alt="">
+        <img src="/Nykaa-Project/images/revolve-1.avif" alt="">
+
+    </div>
+
+    <div id="footer-1">
+      <div>
+        <div>
+          <h3>Get special discount on your inbox</h3>
+          <input style="background-color: transparent; outline: none; border: 0px; border-bottom: 1px solid white;" type="email" placeholder="Your Email">
+          <button style="background-color: transparent; color: white; border: 1px solid white; border-radius: 5px;">Submit</button>
+        </div> 
+        <div>
+          <h3>EXPERIENCE THE NYKAA MOBILE APP</h3>
+          <img id="googleplayimg" src="/Nykaa-Project/images/googleplay-2.png" alt="">
+        </div>
+        <div style="padding: 10px; font-size: small;">
+          <p>FOR ANY HELP CALL US AT</p>
+          <p>1800-267-4444</p>
+          <p>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-2">
+      <div>
+        <div>
+          <h3>Beautify</h3>
+          <p>Who we are?</p>
+          <p>Authenticity</p>
+          <p>Press</p>
+          <p>Testimonials</p>
+          <p>Nykaa CSR</p>
+          <p>Responsible Discloser</p>
+        </div> 
+        <div>
+          <h3>Help</h3>
+          <p>Contact Us</p>
+          <p>FAQ`s</p>
+          <p>Store Location</p>
+          <p>Cancellation</p>
+          <p>Shipment</p>
+          <p>Sell on Nykaa</p>
+        </div> 
+        <div>
+          <h3>Inspire Me</h3>
+          <p>Beauty Book</p>
+          <p>Nykaa TV</p>
+          <p>Nykaa Network</p>
+          <p>Buying Guids</p>
+          <p>Nykaa Fashion</p>
+          <p>Models</p>
+        </div> 
+        <div>
+          <h3>Quick Links</h3>
+          <p>Offer Zone</p>
+          <p>New Launched</p>
+          <p>Nykaa Men</p>
+          <p>Nykaa Fashion</p>
+          <p>Nykaa Pro</p>
+          <p>SiteMap</p>
+        </div> 
+        <div>
+          <h3>Top Categories</h3>
+          <p>Make up</p>
+          <p>Personal Care</p>
+          <p>Hair</p>
+          <p>Skin</p>
+          <p>Application</p>
+          <p>Nature</p>
+        </div> 
+      </div>
+    </div>
+
+    <div id="footer-3">
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="none" viewBox="0 0 47 47"><path fill="#DD1B73" d="M23.16 46.32c12.79 0 23.16-10.37 23.16-23.16C46.32 10.37 35.95 0 23.16 0 10.37 0 0 10.37 0 23.16c0 12.79 10.37 23.16 23.16 23.16Z"/><path fill="#000" d="M28.78 30.17h-.67v1.82h.16v-.03c0-.66.19-1.27.51-1.79Z"/><path fill="#fff" d="m38.63 22.97-2.89-4.37c-.46-.69-1.22-1.1-2.05-1.1h-4.68v-1.63c0-1.36-1.1-2.46-2.46-2.46H10.89c-1.36 0-2.46 1.1-2.46 2.46v13.66c0 1.36 1.1 2.46 2.46 2.46h.99a3.48 3.48 0 0 0 3.47 3.45c1.91 0 3.46-1.55 3.47-3.45h9.44c.01 1.9 1.56 3.45 3.47 3.45 1.91 0 3.46-1.55 3.47-3.45h1.37c1.36 0 2.46-1.1 2.46-2.46v-5.2c.01-.49-.13-.96-.4-1.36Zm-21.62 9.01c-.01.9-.75 1.63-1.66 1.63-.91 0-1.64-.73-1.66-1.63v-.03c0-.91.74-1.66 1.66-1.66.91 0 1.66.74 1.66 1.66v.03Zm10.19-1.81h-8.88c-.61-1-1.7-1.68-2.96-1.68s-2.35.68-2.96 1.68h-1.5c-.35 0-.64-.29-.64-.64V15.86c0-.35.29-.64.64-.64h15.67c.35 0 .64.29.64.64v14.31h-.01Zm6.2 1.81a1.656 1.656 0 0 1-3.31 0v-.03c0-.91.74-1.66 1.66-1.66.92 0 1.66.74 1.66 1.66-.01.02-.01.02-.01.03Zm3.82-2.45c0 .35-.29.64-.64.64H34.7c-.61-1-1.7-1.68-2.96-1.68-1.11 0-2.09.53-2.73 1.35V19.31h4.68c.22 0 .42.11.53.29l2.89 4.37c.07.11.11.23.11.35v5.21Z"/><path fill="#fff" d="M21.54 19.97c-.6-.5-1.5-.41-2.05.14l-.45.45-.45-.45c-.55-.55-1.45-.65-2.05-.14a1.48 1.48 0 0 0-.1 2.18l2.59 2.59.01-.01.01.01 2.59-2.59c.6-.61.57-1.62-.1-2.18Z"/></svg>
+          <p>FREE SHIPPING</p>
+          <hr>
+          <p>On Orders Above ₹299
+          </p>
+        </div> 
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" xml:space="preserve"><path d="M28.78 30.17h-.671v1.82h.16v-.03c.001-.66.191-1.271.511-1.79z"/><path fill="#FFF" d="m38.63 22.97-2.89-4.37a2.454 2.454 0 0 0-2.051-1.1h-4.68v-1.63c0-1.36-1.1-2.46-2.46-2.46H10.89c-1.36 0-2.46 1.1-2.46 2.46v13.66c0 1.36 1.1 2.46 2.46 2.46h.99a3.48 3.48 0 0 0 3.47 3.45c1.91 0 3.46-1.55 3.47-3.45h9.44c.01 1.9 1.561 3.45 3.471 3.45s3.459-1.55 3.469-3.45h1.371c1.359 0 2.459-1.1 2.459-2.46v-5.2c.01-.49-.13-.96-.4-1.36zm-21.62 9.01c-.01.9-.75 1.63-1.66 1.63-.91 0-1.64-.729-1.66-1.63v-.03c0-.91.74-1.66 1.66-1.66.91 0 1.66.74 1.66 1.66v.03zm10.189-1.81H18.32c-.61-1-1.7-1.68-2.96-1.68s-2.35.68-2.96 1.68h-1.5a.644.644 0 0 1-.64-.64V15.86c0-.35.29-.64.64-.64h15.67c.35 0 .64.29.64.64v14.31h-.011zm6.201 1.81c-.01.9-.75 1.63-1.66 1.63s-1.641-.729-1.65-1.63v-.03c0-.91.74-1.66 1.66-1.66s1.66.74 1.66 1.66c-.01.021-.01.021-.01.03zm3.82-2.45c0 .351-.29.64-.64.64h-1.881a3.463 3.463 0 0 0-2.959-1.68 3.45 3.45 0 0 0-2.73 1.35V19.31h4.68c.221 0 .42.11.53.29l2.89 4.37c.07.11.11.23.11.35v5.21z"/><path fill="#FFF" d="M21.54 19.97c-.6-.5-1.5-.41-2.05.14l-.45.45-.45-.45c-.55-.55-1.45-.65-2.05-.14a1.48 1.48 0 0 0-.1 2.18l2.59 2.59.01-.01.01.01 2.59-2.59c.6-.61.57-1.62-.1-2.18z"/><path fill="#DD1B73" d="M23.5 46.703c12.814 0 23.204-10.389 23.204-23.202C46.704 10.686 36.314.297 23.5.297 10.685.297.297 10.685.297 23.501.296 36.314 10.684 46.703 23.5 46.703z"/><path fill="#FFF" d="M7.107 24.123a.928.928 0 0 1-.715-1.522l4.171-5.022 5.022 4.151a.93.93 0 0 1 .121 1.31.927.927 0 0 1-1.309.123l-3.59-2.975-2.985 3.599a.909.909 0 0 1-.715.336z"/><path fill="#FFF" d="M24.022 37.635c-.78 0-1.577-.062-2.353-.195-7.701-1.279-12.929-8.578-11.659-16.261l.185-1.471a.93.93 0 0 1 1.032-.81.93.93 0 0 1 .808 1.034l-.184 1.503c-1.105 6.708 3.437 13.048 10.123 14.163a12.213 12.213 0 0 0 9.162-2.115 12.181 12.181 0 0 0 4.971-7.969c1.104-6.677-3.437-13.006-10.124-14.122a12.294 12.294 0 0 0-10.737 3.458.914.914 0 0 1-1.309 0 .913.913 0 0 1 0-1.31A14.17 14.17 0 0 1 26.3 9.562c7.7 1.278 12.926 8.579 11.656 16.26a14.002 14.002 0 0 1-5.716 9.174c-2.452 1.738-5.296 2.639-8.218 2.639z"/><path fill="#FFF" d="m23.948 29.697-4.223-3.385a.937.937 0 0 1-.144-1.309.937.937 0 0 1 1.309-.145l2.771 2.232 5.594-6.976a.936.936 0 0 1 1.31-.143.943.943 0 0 1 .145 1.309l-6.762 8.417z"/></svg>
+          <p>EASY RETURNS</p>
+          <hr>
+          <p>15-Day Return Policy</p>
+        </div> 
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="none" viewBox="0 0 47 47"><path fill="#DD1B73" d="M23.16 46.32c12.79 0 23.16-10.37 23.16-23.16C46.32 10.37 35.95 0 23.16 0 10.37 0 0 10.37 0 23.16c0 12.79 10.37 23.16 23.16 23.16Z"/><path fill="#fff" d="m36.77 31.96-4.08-6.97a10.23 10.23 0 0 0 1.17-4.77c0-5.71-4.65-10.36-10.36-10.36-5.71 0-10.36 4.65-10.36 10.36 0 1.67.41 3.25 1.12 4.65l-4.14 7.09c-.23.39-.22.87.03 1.28.28.48.85.8 1.3.77l3.76.31c.17.01.33.1.43.25l2.1 2.98c.27.48.79.8 1.35.8h.02c.47 0 .89-.23 1.11-.61l3.24-5.53 3.24 5.53c.22.38.64.61 1.11.61h.02c.55-.01 1.08-.32 1.3-.73l2.14-3.05c.1-.14.26-.24.43-.25l3.67-.3h.04c.54 0 1.07-.3 1.35-.77.23-.42.24-.9.01-1.29ZM23.51 11.47c4.82 0 8.74 3.92 8.74 8.74 0 1.74-.52 3.36-1.4 4.73l-.04.02.01.02a8.732 8.732 0 0 1-7.31 3.96c-4.82 0-8.74-3.92-8.74-8.74 0-4.81 3.92-8.73 8.74-8.73Zm-4.49 25.09-2.06-2.93c-.38-.54-.97-.88-1.63-.93l-3.61-.27 3.51-6.01c1.69 2.25 4.28 3.8 7.23 4.1l.04.07-3.48 5.97Zm12.54-3.87c-.66.05-1.25.39-1.63.93l-2.05 2.96-3.5-5.99.04-.07c2.96-.26 5.57-1.78 7.29-4.01l3.44 5.89-3.59.29Z"/><path fill="#fff" d="m22.6 24.89 5.25-6.54c.28-.35.22-.86-.12-1.14a.819.819 0 0 0-1.14.12l-4.24 5.28-2.05-1.65a.819.819 0 0 0-1.14.12.82.82 0 0 0 .12 1.14l3.32 2.67Z"/></svg>
+          <p>100% AUTHENTIC</p>
+          <hr>
+          <p>Products Sourced Directly</p>
+        </div> 
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="none" viewBox="0 0 47 47"><path fill="#DD1B73" d="M23.16 46.32c12.79 0 23.16-10.37 23.16-23.16C46.32 10.37 35.95 0 23.16 0 10.37 0 0 10.37 0 23.16c0 12.79 10.37 23.16 23.16 23.16Z"/><path fill="#fff" d="M16.43 26.1a.902.902 0 0 0-1.28-.02c-.36.35-.37.92-.02 1.28L19 31.35c.18.18.41.28.65.28.23 0 .46-.08.63-.26.36-.35.37-.92.02-1.28l-3.87-3.99ZM19.19 23.79a.902.902 0 0 0-1.28-.02c-.36.35-.37.92-.02 1.28l3.87 3.99c.18.18.41.28.65.28.23 0 .46-.08.63-.26.36-.35.37-.92.02-1.28l-3.87-3.99Z"/><path fill="#fff" d="M34.42 11.47a4.88 4.88 0 0 0-6.84.02l-2.59 2.53c-.07.07-.13.16-.2.24h-4.55c-.34 0-.67.14-.91.38L8.17 25.85c-.49.5-.5 1.3-.01 1.8L18.45 38.2c.25.26.58.39.92.39.33 0 .66-.12.91-.38l11.47-11.49c.24-.24.37-.57.37-.9v-5.31c.13-.04.25-.1.36-.2l1.84-1.69a4.88 4.88 0 0 0 1.59-3.56 4.81 4.81 0 0 0-1.49-3.59Zm-4.11 14.12L19.37 36.54l-9.54-9.79 10.63-10.68h3.29c-.14.46-.24.93-.24 1.42a4.89 4.89 0 0 0 1.43 3.5l.36.37a.902.902 0 0 0 1.28.01c.36-.35.36-.93 0-1.28l-.36-.37c-.59-.59-.91-1.37-.9-2.21 0-.51.14-1 .38-1.44h4.61v9.52Zm2.79-8.31-.97.9v-2.64c0-.71-.57-1.28-1.28-1.28h-3.51l1.5-1.47a3.076 3.076 0 0 1 4.31-.01c.62.6.96 1.4.95 2.26-.01.86-.36 1.66-1 2.24Z"/></svg>
+          <p>1900+ BRANDS</p>
+          <hr>
+          <p>1.2 Lakh+ Products</p>
+        </div> 
+        <div>
+          <p>Show us some love <span>❤</span> on social media</p>
+        </div> 
+      </div>
+    </div>
+    <div></div>
+</body>
+</html>
