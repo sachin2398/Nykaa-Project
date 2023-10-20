@@ -5,6 +5,18 @@ Deployed link :- [Nyka Clone](https://spectacular-druid-f4b659.netlify.app/index
 
 ![image](https://github.com/sachin2398/Nykaa-Project/assets/89378450/a82a3c68-fffa-49b4-a189-632299cb2464)
 
+Team Members :- 
+
+[Sachin Rajput](https://github.com/sachin2398)
+
+[Bhatar Goswami](https://github.com/Bharat-Goswami)
+
+[Rupan Das](https://github.com/Rupan510)
+
+[Sakshi Singh](https://github.com/Sakuu89)
+
+[Divyam Rauthan](https://github.com/DivYam062)
+
 
 Nykaa is an Indian e-commerce Mumbai-based retail seller of beauty, fashion and wellness products. The ecommerce startup lists products from over 1200 global brands along with its own line of products Nykaa Cosmetics and Nykaa Naturals.It sells beauty,wellness and fashion product across website,mobile apps and 76 offline store.
 Our Team Members ❤️
