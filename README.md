@@ -22,8 +22,7 @@ Bootstrap
 
 Installing and Running
 To run this application on your local system, execute the following commands on your terminal/command line:
-git clone https://github.com/Ankit-Mishra07/NykaaCloneWithBackend.git
-
+git clone https://github.com/sachin2398/Nykaa-Project.git
 Features
 There is login and logout functionality.
 Elegant Navbar for easy navigation between pages and products.
