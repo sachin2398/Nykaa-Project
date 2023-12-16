@@ -1,6 +1,6 @@
 NYKAA CLONE 
 
-Deployed link :- [Nyka Clone](https://spectacular-druid-f4b659.netlify.app/index.html)
+Deployed link :- [Nyka Clone](https://651428efa7339b1743627d39--beamish-llama-315f67.netlify.app/)
 
 
 ![image](https://github.com/sachin2398/Nykaa-Project/assets/89378450/a82a3c68-fffa-49b4-a189-632299cb2464)
