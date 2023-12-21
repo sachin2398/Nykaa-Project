@@ -1,0 +1,146 @@
+  div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  form {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  #navBar>p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+  }
+
+  .tick-icon{
+    margin-right: 50px;
+  }
+
+  #navBar{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    margin-right: 350px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .tick-icon1{
+    color: #fc2779;
+    cursor: pointer;
+  }
+  .tick-icon2 img{
+    max-width: 35px;
+    max-height: 35px;
+  }
+
+  .tick-icon3 img{
+    max-width: 35px;
+    max-height: 35px;
+  }
+
+  input[type="text"],input[type="number"],input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="submit"],input[type="button"]  {
+    background-color: #fc2779;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    box-shadow: 0px 0px 8px gray;
+  }
+  input[type="button"]:hover {
+    box-shadow: 0px 0px 8px gray;
+  }
+
+  label {
+    font-size: 20px;
+  }
+  h1{
+    text-align: center;
+  }
+
+
+  #tostBox{
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.tost{
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.tost i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: red;
+    padding-right: 10px;
+    border-right: 1px solid rgb(205, 203, 203);
+}
+.tost::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    animation: anim 1.5s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
+
+#navbar:first-child(){
+    margin-left: 0;
+  
+}
+
+body{
+  background-image: url("/Nykaa-Project/Image/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

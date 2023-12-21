@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Details</title>
+    <link rel="stylesheet" href="./Style/address.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="navBar">
+        <div>
+            <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/nykaa-logo.svg" alt="Nyka" id="nyka">
+        </div>
+        <p class="tick-icon1"><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt="tick-icon" class="tick-icon" >Sign Up</p>
+        <p class="tick-icon2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circle_Davys-Grey_Solid.svg/1200px-Circle_Davys-Grey_Solid.svg.png" alt="tick-icon" class="tick-icon" >Address</p>
+        <p class="tick-icon3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circle_Davys-Grey_Solid.svg/1200px-Circle_Davys-Grey_Solid.svg.png" alt="tick-icon" class="tick-icon" >Payment</p>
+    </div>
+
+    <div>
+        <form>
+            <h1>Add Your Details</h1>
+            <label for="">Name</label><br />
+            <input id="name" type="text" placeholder="Enter Name" /><br />
+            <label for="">Mobile Number</label><br />
+            <input id="mobile" type="number" placeholder="Enter Mobile Number" /><br />
+            <label for="">Email</label><br />
+            <input id="email" type="email" placeholder="Enter Email" /><br />
+            <label for="">Address-1</label><br />
+            <input id="address1" type="text" placeholder="Enter House no./ area" /><br />
+            <label for="">Address-2 </label><br />
+            <input id="address2" type="text" placeholder="Enter City" /><br />
+            <label for="">Mode Of Payment</label><br />
+            <select id="priority">
+              <option value="">Select Mode Of Payment</option>
+              <option value="High">Online Payment</option>
+              <option value="Low">Cash On Delivery</option>
+            ><br />
+            <input type="submit" />
+          </form>
+    </div>
+    <div id="tostBox">
+        
+    </div>
+</body>
+</html>
+<script src="./Script/address.js"></script>
